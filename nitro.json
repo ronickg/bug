@@ -1,0 +1,17 @@
+{
+  "cxxNamespace": ["bug"],
+  "ios": {
+    "iosModuleName": "Bug"
+  },
+  "android": {
+    "androidNamespace": ["bug"],
+    "androidCxxLibName": "bug"
+  },
+  "autolinking": {
+    "Bug": {
+      "swift": "Bug",
+      "kotlin": "Bug"
+    }
+  },
+  "ignorePaths": ["node_modules"]
+}
