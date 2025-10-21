@@ -8,9 +8,9 @@
     "androidCxxLibName": "bug"
   },
   "autolinking": {
-    "Bug": {
-      "swift": "Bug",
-      "kotlin": "Bug"
+    "CallbackTester": {
+      "swift": "HybridCallbackTester",
+      "kotlin": "HybridCallbackTester"
     }
   },
   "ignorePaths": ["node_modules"]

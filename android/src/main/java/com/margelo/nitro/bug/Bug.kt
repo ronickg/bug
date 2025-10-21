@@ -1,10 +1,10 @@
 package com.margelo.nitro.bug
-  
+
 import com.facebook.proguard.annotations.DoNotStrip
 
 @DoNotStrip
-class Bug : HybridBugSpec() {
-  override fun multiply(a: Double, b: Double): Double {
-    return a * b
+class HybridCallbackTester : HybridCallbackTesterSpec() {
+  override fun createBuilder(callback: MyCallback): HybridCallbackBuilderSpec {
+    return HybridCallbackBuilder(callback) // Pass callback to builder
   }
 }

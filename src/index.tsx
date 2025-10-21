@@ -1,9 +1,11 @@
 import { NitroModules } from 'react-native-nitro-modules';
-import type { Bug } from './Bug.nitro';
+import type { CallbackTester, MyCallback, CallbackBuilder } from './Bug.nitro';
 
-const BugHybridObject =
-  NitroModules.createHybridObject<Bug>('Bug');
+export type { MyCallback, CallbackBuilder };
 
-export function multiply(a: number, b: number): number {
-  return BugHybridObject.multiply(a, b);
+const CallbackTesterObject =
+  NitroModules.createHybridObject<CallbackTester>('CallbackTester');
+
+export function createCallbackTester(): CallbackTester {
+  return CallbackTesterObject;
 }
